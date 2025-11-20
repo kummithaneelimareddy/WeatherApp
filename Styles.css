@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:#130f40;/* Dark background */
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Top bar styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Logo on left, units on right */
+    align-items: center;
+    padding: 15px 30px;
+    /*background-color:black; /* Dark background */
+    color: white;
+}
+
+/* Logo styling */
+.top-bar img {
+    height: 40px; /* Adjust logo size */
+}
+
+
+
+.units-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Compact container */
+.custom-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #1e1e3f; /* Dark background */
+    padding: 2px 6px; /* Smaller padding */
+    border-radius: 6px;
+    gap: 4px; /* Reduce space between elements */
+    cursor: pointer;
+    font-size: 12px; /* Smaller text */
+    transform: scale(0.85); /* Shrinks entire container */
+}
+
+/* Smaller gear icon */
+.units-icon {
+    width: 12px; /* Reduced size */
+    height: 12px;
+}
+
+/* Smaller text */
+.units-text {
+    font-size: 12px;
+    color: white;
+}
+
+/* Smaller dropdown arrow */
+.dropdown-icon {
+    width: 10px; /* Reduced size */
+    height: 10px;
+}
+
+/* Reduce clickable area for select */
+.custom-select select {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 40px; /* Smaller clickable area */
+    height: 24px;
+    opacity: 0; /* Invisible but clickable */
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 32px;     /* Large text */
+    text-align: center;    /* Center horizontally */
+    margin-top: 40px;      /* Space from top */
+    margin-bottom: 30px;   /* Space below heading */
+    color: white;          /* White text for dark background */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+#location {
+    width: 300px;
+    padding: 12px 12px 12px 40px; /* extra left padding for icon */
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    /*background-color:greenyellow; /* dark background like in image */
+    color: white; /* text color */
+    background: url('Images/icon-search.svg') no-repeat 12px center;
+    background-size: 20px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* subtle shadow for depth */
+}
+
+/*#location::placeholder {
+    color: #ccc;  
+}*/
+
+input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*button:hover {
+    background-color:blue;
+}*/
+
+/*.weather-card {
+   
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.weather-card img {
+    width: 80px;
+    height: 80px;
+}*/
+.weather-card {
+    background: url('Images/bg-today-large.svg') no-repeat center center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 20px 30px;
+    width: 750px; 
+    height: 277px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.weather-left {
+    text-align: left;
+}
+
+.weather-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.weather-left p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.weather-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.weather-right img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-right .temp {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.detail-box {
+    background-color: #1e1e3f;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.detail-box h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.detail-box p {
+    font-size: 18px;
+    font-weight: bold;
+}

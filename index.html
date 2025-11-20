@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="Stylesheet" href="Styles.css">
+</head>
+
+<body>
+  <header class="top-bar">
+    <!-- Logo -->
+    <img src="Images/logo.svg">
+
+    <!--Units section -->
+    <div class="units-container">
+      <div class="custom-select">
+        <img src="Images/icon-units.svg">
+        <span class="units-text">Units</span>
+        <img src="Images/icon-dropdown.svg">
+        <select id="units">
+          <option value = "metric"> units</option>
+          <option value="metric">°C</option>
+          <option value="imperial">°F</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Heading centered -->
+  <h1 class="heading">How’s the sky looking today?</h1>
+
+  <div class="search-container">
+    <input type="text" id="location" placeholder="Search for a place...">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <!-- Weather result -->
+  <div id="result" class="weather-card"></div>
+
+  <div id="details" class="details-container"></div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
