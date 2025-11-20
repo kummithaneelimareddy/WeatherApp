@@ -1,14 +1,8 @@
-/*const lat = 12.9716; // Example: Bangalore latitude
-const lon = 77.5946; // Example: Bangalore longitude
-const apiKey = ef7bd83347a8281a66186625304688ba; // Replace with your actual key
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
- // Replace with your OpenWeatherMap API key
-*/
 
 let selectedUnit = "metric"; // Default is Celsius
-const apiKey = "ef7bd83347a8281a66186625304688ba"; // Replace with your OpenWeatherMap API key
-//  // Replace with your OpenWeatherMap API key
+const apiKey = ""; // Replace with your OpenWeatherMap API key
+
 
 document.getElementById('searchBtn').addEventListener('click', () => {
     fetchWeather();
